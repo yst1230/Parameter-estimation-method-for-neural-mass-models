@@ -89,8 +89,12 @@ while l<Max_iter+1
             C4=2*r42; 
             D_Driver=abs(C4*Driver_pos(j)-m*Positions(i,j)); 
             X4=Chaser_pos(j)-A4*D_Driver;
+            W1=abs(X1)/(abs(X1)+abs(X2)+abs(X3)+abs(X4));
+            W2=abs(X2)/(abs(X2)+abs(X2)+abs(X3)+abs(X4));
+            W3=abs(X3)/(abs(X3)+abs(X2)+abs(X3)+abs(X4));
+            W4=abs(X4)/(abs(X4)+abs(X2)+abs(X3)+abs(X4));
             if rand() > 0.7
-                Positions(i, j) = 0.4*X1+0.3*X2+0.2*X3+0.1*X4;
+                Positions(i, j) = (W1.*X1+W2.*X2+W3.*X3+W4.*X4)/4;
             else
                 if rand < 0.5
                     Positions(i,j)=Attacker_pos(j)*(1-l/Max_iter)+(mean(Positions(i,j))-Attacker_pos(j))*rand(); % Eq. (3) and Eq. (4)
