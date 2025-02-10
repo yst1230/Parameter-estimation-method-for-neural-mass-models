@@ -1,7 +1,7 @@
 These codes are used to estimate the parameters of neural mass models using the improved chimpanzee algorithm and Riemannian geometry method.
 The related paper has been submitted to CHAOS SOLITONS & FRACTALS journal and has not yet been accepted
 %% script
-1.plot_02_m：This script is used to reproduce Figure 2 in the paper. Figure 2 shows that the relationship between the embedding dimension m and the statistics E_1 and E_2.
+1.plot_02_m：This script is used to reproduce Figure 2 in the paper. Figure 2 shows that the relationship between the embedding dimension m and the statistics E_1 and E_2.<br>
 2.plot_03_n：This script is used to reproduce Figure 3 in the paper. Figure 3 shows that changes in algorithm fitness under different population sizes and iteration times.
 3.plot_04_method：This script is used to reproduce Figure 4 in the paper. Figure 4 shows that the fitness of different optimization algorithms changes with the number of iterations
 4.plot_05_bias：This script is used to reproduce Figure 5 in the paper. Figure 5 shows that JR-NMM parameter values estimated by using different loss functions
