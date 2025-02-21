@@ -1,5 +1,5 @@
 clc;clear;close all
-addpath(genpath('D:\工程设计的优化问题'))
+addpath(genpath('D:\nmm'))
 color_list=[52  148 186;
     236 112 22;
     58, 191, 153]/255;
